@@ -1,0 +1,13 @@
+{
+  "name": "puck-vue",
+  "version": "0.0.1",
+  "description": "application to train stick handling",
+  "author": "Cameron <cameron.fitzpatrick@ricardodefense.com>",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/app": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0"
+  }
+}

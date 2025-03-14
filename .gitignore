@@ -1,33 +1,33 @@
-# Gradle files
-.gradle/
-build/
+.DS_Store
+.thumbs.db
+node_modules
 
-# Local configuration file (sdk path, etc)
-local.properties
+# Quasar core related directories
+.quasar
+/dist
+/quasar.config.*.temporary.compiled*
 
-# Log/OS Files
-*.log
+# Cordova related directories and files
+/src-cordova/node_modules
+/src-cordova/platforms
+/src-cordova/plugins
+/src-cordova/www
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.apk
-output.json
+# Capacitor related directories and files
+/src-capacitor/www
+/src-capacitor/node_modules
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Keystore files
-*.jks
-*.keystore
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof
+# local .env files
+.env.local*
