@@ -6,6 +6,7 @@ const routes = [
       { path: '', component: () => import('pages/IndexPage.vue') },
       { path: 'settings', component: () => import('pages/SettingsPage.vue') },
       { path: 'puckMover', component: () => import('pages/PuckMoverPage.vue') },
+      { path: 'instructions', component: () => import('pages/InstructionsPage.vue') },
     ],
   },
 

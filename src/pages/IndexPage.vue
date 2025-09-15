@@ -1,9 +1,17 @@
 <template>
   <q-page class="menu-page flex flex-center bg-white">
     <div class="menu-container">
-      <h1 class="menu-title">Puck View V1.0</h1>
-      <q-icon class="menu-button" name="play_arrow" size="5rem" @click="goToPlay" />
-      <q-icon class="menu-button" name="settings" size="4rem" @click="goToSettings" />
+      <h1 class="menu-title">Puck View</h1>
+      <div class="menu-buttons">
+        <q-icon
+          class="menu-button"
+          name="play_arrow"
+          size="5rem"
+          @click="router.push('/puckMover')"
+        />
+        <q-icon class="menu-button" name="help" size="4rem" @click="router.push('/instructions')" />
+        <q-icon class="menu-button" name="settings" size="4rem" @click="router.push('/settings')" />
+      </div>
     </div>
   </q-page>
 </template>
@@ -12,15 +20,6 @@
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
-
-function goToPlay() {
-  router.push('/puckMover')
-}
-
-function goToSettings() {
-  console.log('Go to settings')
-  router.push('/settings')
-}
 </script>
 
 <style scoped>
@@ -32,19 +31,26 @@ function goToSettings() {
   background-color: #f5f5f5;
 }
 
+.menu-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
 .menu-container {
   text-align: center;
 }
 
 .menu-title {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .menu-button {
   display: block;
   margin: 1rem auto;
   width: 200px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 </style>
