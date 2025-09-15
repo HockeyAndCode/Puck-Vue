@@ -3,7 +3,7 @@
 application to train stick handling
 
 
-### Basic Commands
+## Basic Commands
 
 ### Install the dependencies
 ```bash
@@ -26,13 +26,13 @@ yarn format
 npm run format
 ```
 
-### Development
+## Development
 
 To run the app in either ios or android run
 
 quasar dev -m capacitor -T [ios|android]
 
-# ..or the longer form:
+..or the longer form:
 quasar dev --mode capacitor --target [ios|android]
 
 It will open the IDE (Android Studio / Xcode) and from there you can manually select the emulator (or multiple ones simultaneously!) 
@@ -46,14 +46,14 @@ In Android Studio, you will be greeted with a message recommending to upgrade th
 
 $ quasar build -m capacitor -T [ios|android]
 
-# ..or the longer form:
+..or the longer form:
 $ quasar build --mode capacitor --target [ios|android]
 
 If you want a production build with debugging enabled for the UI code:
 
 $ quasar build -m capacitor -T [ios|android] -d
 
-# ..or the longer form
+..or the longer form
 $ quasar build -m capacitor -T [ios|android] --debug
 
 ### Customize the configuration
