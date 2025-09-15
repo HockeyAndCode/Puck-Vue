@@ -29,21 +29,26 @@ npm run format
 ## Development
 
 To run the app in either ios or android run
-
+```bash
 quasar dev -m capacitor -T [ios|android]
 
 ..or the longer form:
 quasar dev --mode capacitor --target [ios|android]
+```
+This will open the respective IDE (Android Studio or Xcode). From there, you can:
 
-It will open the IDE (Android Studio / Xcode) and from there you can manually select the emulator (or multiple ones simultaneously!) 
-and install the dev app on it/them. You can also run the dev app on a real mobile/tablet device.
+Select an emulator (or multiple emulators simultaneously).
+
+Install the development app on the emulator(s).
+
+Run the app on a real mobile or tablet device.
 
 ## WARNING
 
 In Android Studio, you will be greeted with a message recommending to upgrade the Gradle version. DO NOT UPGRADE GRADLE as it will break the Capacitor project. Same goes for any other requested upgrades.
 
 ### Building for Production
-
+```bash
 $ quasar build -m capacitor -T [ios|android]
 
 ..or the longer form:
@@ -55,6 +60,6 @@ $ quasar build -m capacitor -T [ios|android] -d
 
 ..or the longer form
 $ quasar build -m capacitor -T [ios|android] --debug
-
+```
 ### Customize the configuration
 See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
